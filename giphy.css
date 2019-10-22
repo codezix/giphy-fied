@@ -1,0 +1,204 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: rgb(18, 27, 18)
+}
+h1{
+    color: green;
+}
+}
+
+.main {
+  background: linear-gradient(rgba(0, 68, 102, 0.2), rgba(0, 68, 102, 0.01));
+  min-height: 100%;
+  margin-bottom: -80px;
+  padding-bottom: 40px;
+}
+
+.well {
+  border-radius: 5px;
+  padding: 40px 0;
+}
+
+div.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.form-inline {
+  margin-top: 20px;
+}
+.form-inline input {
+  margin-top: -2px;
+  width: auto !important;
+  transition: all 300ms ease-in-out;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+}
+.form-inline input:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  transition: all 300ms ease-in-out;
+}
+.form-inline #submit {
+  height: 33px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: green;
+  color: white;
+  letter-spacing: 1px;
+  margin-left: -4px;
+  border-radius: 0 5px 5px 0px;
+  border: 0;
+}
+.form-inline #submit:hover {
+  cursor: pointer;
+  background: #006fa6;
+}
+
+.more-options {
+  margin-top: 20px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+  cursor: pointer;
+}
+
+#more-options-toggle {
+  display: none;
+}
+#more-options-toggle + .wrap .options {
+  display: none;
+}
+#more-options-toggle:checked + .wrap .options {
+  display: block;
+  max-width: 500px;
+}
+#more-options-toggle:checked + .wrap .options hr {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.5);
+}
+
+select.form-control {
+  width: auto;
+  margin-top: -5px;
+}
+
+#trending a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.wrap {
+  text-align: center;
+}
+
+.gif {
+  max-width: 100px;
+}
+
+div.gif-results {
+  text-align: center;
+  display: inline-block;
+}
+div.gif-results .gifs {
+  padding: 10px;
+  height: 200px;
+  width: auto;
+  max-width: 350px;
+}
+
+.load-more {
+  text-align: center;
+}
+.load-more button {
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  display: none;
+  background: rgb(121, 245, 121);
+  border: 0;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 20px 0;
+  border: 1px solid transparent;
+}
+.load-more button:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  background: #006fa6;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+.default-gif {
+  text-align: center;
+}
+.default-gif img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.loading-gif {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.no-result {
+  display: none;
+}
+
+.footer {
+  height: 40px;
+  margin: 40px 0 0 0;
+  background: rgba(0, 0, 0, 0.2);
+
+}
+.footer p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+.footer p a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .input-group {
+    display: inline-flex;
+  }
+
+  .form-inline input {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-inline input {
+    min-width: 500px;
+  }
+}
